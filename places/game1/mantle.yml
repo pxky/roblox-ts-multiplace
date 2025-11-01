@@ -1,0 +1,44 @@
+owner:
+    group: 0
+payments: group
+environments:
+    - label: dev
+      targetNamePrefix: environmentLabel
+      targetOverrides:
+          places:
+              start:
+                  file: build/dev.rbxl
+                  configuration:
+                      name: game-1 dev
+                      description: |-
+                          development
+      targetAccess: public
+    - label: prod
+      targetAccess: public
+
+target:
+    experience:
+        configuration:
+            genre: adventure
+            playableDevices: [computer, phone, tablet]
+            privateServers:
+                price: 0
+            enableStudioAccessToApis: true
+            avatarType: r6
+        places:
+            start:
+                file: build/prod.rbxl
+                configuration:
+                    name: game-1
+                    description: |-
+                        TBA
+                    maxPlayerCount: 16
+        icon: assets/marketing/icon.png
+        thumbnails: [assets/marketing/thumbnails/thumbnail.png]
+        spatialVoice:
+            enabled: true
+        badges:
+            welcome:
+                name: Welcome 🎉
+                description: Thanks for playing!
+                icon: ../../assets/placeholder.png

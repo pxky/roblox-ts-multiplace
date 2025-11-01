@@ -1,0 +1,27 @@
+{
+	"name": "game",
+	"globIgnorePaths": ["**/package.json", "**/tsconfig.json"],
+	"emitLegacyScripts": false,
+	"tree": {
+		"$className": "DataModel",
+		"ReplicatedStorage": {
+			"$className": "ReplicatedStorage",
+			"rbxts_include": {
+				"$path": "include",
+				"node_modules": {
+					"$className": "Folder",
+					"@rbxts": { "$path": "node_modules/@rbxts" },
+					"@flamework": { "$path": "node_modules/@flamework" }
+				}
+			},
+			"shared": { "$path": "out/shared" },
+			"client": { "$path": "out/client" },
+			"__stories__": { "$path": "out/__stories__" }
+		},
+		"ServerScriptService": {
+			"$className": "ServerScriptService",
+			"server": { "$path": "out/server" }
+		},
+		"ReplicatedFirst": { "$path": "out/shared-first" }
+	}
+}

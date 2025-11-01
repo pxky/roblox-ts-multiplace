@@ -1,0 +1,33 @@
+{
+	"name": "game-1",
+	"globIgnorePaths": ["**/package.json", "**/tsconfig.json"],
+	"emitLegacyScripts": false,
+	"tree": {
+		"$className": "DataModel",
+		"ReplicatedStorage": {
+			"$path": "assets/services/shared.rbxm",
+			"rbxts_include": {
+				"$path": "../../include",
+				"node_modules": {
+					"$className": "Folder",
+					"@rbxts": { "$path": "../../node_modules/@rbxts" },
+					"@flamework": { "$path": "../../node_modules/@flamework" }
+				}
+			},
+			"shared": { "$path": "../../out/shared" },
+			"client": { "$path": "../../out/client" },
+			"__stories__": { "$path": "../../out/__stories__" }
+		},
+		"ServerScriptService": {
+			"$path": "assets/services/server.rbxm",
+			"server": { "$path": "../../out/server" }
+		},
+		"ReplicatedFirst": { "$path": "../../out/shared-first" },
+		"ServerStorage": { "$path": "assets/services/server-storage.rbxm" },
+		"StarterPlayer": { "$path": "assets/services/starter-player.rbxm" },
+		"Workspace": { "$path": "assets/services/workspace.rbxm" },
+		"Players": { "$path": "assets/services/players.rbxm" },
+		"Lighting": { "$path": "assets/services/lighting.rbxm" },
+		"TextChatService": { "$path": "assets/services/text-chat.rbxm" }
+	}
+}

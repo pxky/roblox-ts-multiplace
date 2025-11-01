@@ -1,0 +1,14 @@
+[creator]
+type = "group"
+id = 0
+
+[codegen]
+typescript = true
+style = "flat"
+strip_extension = false
+
+[inputs.assets]
+path = "assets/upload/**/*"
+output_path = "src/shared/assets"
+
+[inputs.assets.web]
